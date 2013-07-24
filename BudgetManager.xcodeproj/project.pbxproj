@@ -17,7 +17,11 @@
 		6E4B9B20179F5890008B9A10 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9B1F179F5890008B9A10 /* Default@2x.png */; };
 		6E4B9B22179F5890008B9A10 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9B21179F5890008B9A10 /* Default-568h@2x.png */; };
 		6E4B9B25179F5890008B9A10 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9B23179F5890008B9A10 /* MainStoryboard.storyboard */; };
-		6E4B9B28179F5890008B9A10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B27179F5890008B9A10 /* ViewController.m */; };
+		6E4B9B30179F58C1008B9A10 /* BudgetManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B2E179F58C1008B9A10 /* BudgetManager.xcdatamodeld */; };
+		6E4B9B3C179F7B4A008B9A10 /* ReceivableTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B3B179F7B4A008B9A10 /* ReceivableTransaction.m */; };
+		6E4B9B3F179F7B4A008B9A10 /* PayableTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B3E179F7B4A008B9A10 /* PayableTransaction.m */; };
+		6E4B9B42179F7B4A008B9A10 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B41179F7B4A008B9A10 /* Account.m */; };
+		6E4B9B45179F7C34008B9A10 /* Account+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9B44179F7C34008B9A10 /* Account+Create.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +39,15 @@
 		6E4B9B1F179F5890008B9A10 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6E4B9B21179F5890008B9A10 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6E4B9B24179F5890008B9A10 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6E4B9B26179F5890008B9A10 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E4B9B27179F5890008B9A10 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E4B9B2F179F58C1008B9A10 /* BudgetManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BudgetManager.xcdatamodel; sourceTree = "<group>"; };
+		6E4B9B3A179F7B4A008B9A10 /* ReceivableTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceivableTransaction.h; sourceTree = "<group>"; };
+		6E4B9B3B179F7B4A008B9A10 /* ReceivableTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceivableTransaction.m; sourceTree = "<group>"; };
+		6E4B9B3D179F7B4A008B9A10 /* PayableTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayableTransaction.h; sourceTree = "<group>"; };
+		6E4B9B3E179F7B4A008B9A10 /* PayableTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayableTransaction.m; sourceTree = "<group>"; };
+		6E4B9B40179F7B4A008B9A10 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		6E4B9B41179F7B4A008B9A10 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		6E4B9B43179F7C34008B9A10 /* Account+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Account+Create.h"; sourceTree = "<group>"; };
+		6E4B9B44179F7C34008B9A10 /* Account+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Account+Create.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +94,16 @@
 		6E4B9B11179F5890008B9A10 /* BudgetManager */ = {
 			isa = PBXGroup;
 			children = (
-				6E4B9B1A179F5890008B9A10 /* AppDelegate.h */,
-				6E4B9B1B179F5890008B9A10 /* AppDelegate.m */,
 				6E4B9B23179F5890008B9A10 /* MainStoryboard.storyboard */,
-				6E4B9B26179F5890008B9A10 /* ViewController.h */,
-				6E4B9B27179F5890008B9A10 /* ViewController.m */,
+				6E4B9B2E179F58C1008B9A10 /* BudgetManager.xcdatamodeld */,
+				6E4B9B40179F7B4A008B9A10 /* Account.h */,
+				6E4B9B41179F7B4A008B9A10 /* Account.m */,
+				6E4B9B43179F7C34008B9A10 /* Account+Create.h */,
+				6E4B9B44179F7C34008B9A10 /* Account+Create.m */,
+				6E4B9B3D179F7B4A008B9A10 /* PayableTransaction.h */,
+				6E4B9B3E179F7B4A008B9A10 /* PayableTransaction.m */,
+				6E4B9B3A179F7B4A008B9A10 /* ReceivableTransaction.h */,
+				6E4B9B3B179F7B4A008B9A10 /* ReceivableTransaction.m */,
 				6E4B9B12179F5890008B9A10 /* Supporting Files */,
 			);
 			path = BudgetManager;
@@ -96,6 +112,8 @@
 		6E4B9B12179F5890008B9A10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E4B9B1A179F5890008B9A10 /* AppDelegate.h */,
+				6E4B9B1B179F5890008B9A10 /* AppDelegate.m */,
 				6E4B9B13179F5890008B9A10 /* BudgetManager-Info.plist */,
 				6E4B9B14179F5890008B9A10 /* InfoPlist.strings */,
 				6E4B9B17179F5890008B9A10 /* main.m */,
@@ -175,7 +193,11 @@
 			files = (
 				6E4B9B18179F5890008B9A10 /* main.m in Sources */,
 				6E4B9B1C179F5890008B9A10 /* AppDelegate.m in Sources */,
-				6E4B9B28179F5890008B9A10 /* ViewController.m in Sources */,
+				6E4B9B30179F58C1008B9A10 /* BudgetManager.xcdatamodeld in Sources */,
+				6E4B9B3C179F7B4A008B9A10 /* ReceivableTransaction.m in Sources */,
+				6E4B9B3F179F7B4A008B9A10 /* PayableTransaction.m in Sources */,
+				6E4B9B42179F7B4A008B9A10 /* Account.m in Sources */,
+				6E4B9B45179F7C34008B9A10 /* Account+Create.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +322,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6E4B9B2E179F58C1008B9A10 /* BudgetManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E4B9B2F179F58C1008B9A10 /* BudgetManager.xcdatamodel */,
+			);
+			currentVersion = 6E4B9B2F179F58C1008B9A10 /* BudgetManager.xcdatamodel */;
+			path = BudgetManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6E4B9B00179F5890008B9A10 /* Project object */;
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="payables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PayableTransaction" inverseName="account" inverseEntity="PayableTransaction" syncable="YES"/>
+        <relationship name="receivables" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ReceivableTransaction" inverseName="account" inverseEntity="ReceivableTransaction" syncable="YES"/>
+    </entity>
+    <entity name="PayableTransaction" representedClassName="PayableTransaction" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="account" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="payables" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <entity name="ReceivableTransaction" representedClassName="ReceivableTransaction" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="account" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="receivables" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="232" positionY="-84" width="128" height="103"/>
+        <element name="ReceivableTransaction" positionX="9" positionY="36" width="128" height="88"/>
+        <element name="PayableTransaction" positionX="439" positionY="18" width="128" height="88"/>
+    </elements>
+</model>
